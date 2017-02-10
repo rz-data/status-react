@@ -84,10 +84,10 @@
    :list-selection-fn show-action-sheet
    :tabs              {:tab-shadows? false}
    :chats             {:action-button?       false
-                       :new-chat-in-toolbar? true}
+                       :new-chat-in-toolbar? true
+                       :render-separator?    true}
    :contacts          {:action-button?          false
                        :new-contact-in-toolbar? true
                        :uppercase-subtitles?    true
                        :group-block-shadows?    false}
    :discover         {:uppercase-subtitles? true}})
-
