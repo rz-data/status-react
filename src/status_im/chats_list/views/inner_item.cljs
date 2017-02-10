@@ -87,8 +87,7 @@
       [chat-icon-view-chat-list chat-id group-chat name color online]]
      [view st/item-container
       [view st/name-view
-       [text {:style st/name-text
-              :font  :medium}
+       [text {:style st/name-text}
         (if (str/blank? name)
           (generate-gfy)
           (truncate-str name 30))]

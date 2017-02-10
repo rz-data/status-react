@@ -5,6 +5,7 @@
                                                  color-blue
                                                  text1-color
                                                  text2-color
+                                                 text4-color
                                                  new-messages-count-color]]
             [status-im.components.tabs.styles :refer [tabs-height]]
             [status-im.components.toolbar.styles :refer [toolbar-background1
@@ -34,7 +35,7 @@
 (def chat-container
   {:flex-direction      :row
    :background-color    color-white
-   :height              94})
+   :height              76})
 
 (def chat-icon-container
   {:margin-top  -2
@@ -55,7 +56,7 @@
 
 (def name-text
   {:color      text1-color
-   :font-size  14})
+   :font-size  16})
 
 (def group-icon
   {:margin-top  5
@@ -70,15 +71,15 @@
    :color      text2-color})
 
 (def last-message-text
-  {:margin-top   5
+  {:margin-top   4
    :margin-right 40
-   :color        text1-color
+   :color        text4-color
    :fontSize     14
    :lineHeight   20})
 
 (def last-message-text-no-messages
   (merge last-message-text
-         {:color text2-color}))
+         {:color text4-color}))
 
 (def status-container
   {:flex-direction :row
@@ -91,23 +92,23 @@
    :height    7})
 
 (def datetime-text
-  {:fontSize   12
-   :color      text2-color
+  {:fontSize   14
+   :color      text4-color
    :marginLeft 5})
 
 (def new-messages-container
   {:position        :absolute
-   :top             54
-   :right           16
-   :width           24
-   :height          24
+   :top             45
+   :right           23
+   :width           22
+   :height          22
    :backgroundColor new-messages-count-color
    :borderRadius    50})
 
 (def new-messages-text
-  {:top       5
+  {:top       3
    :left      0
-   :fontSize  10
+   :fontSize  12
    :color     color-blue
    :textAlign :center})
 
