@@ -44,7 +44,7 @@
       [text {:style st/last-message-text-no-messages}
        (label :t/no-messages)]
       [text {:style           st/last-message-text
-             :number-of-lines 2}
+             :number-of-lines 1}
        content])))
 
 (defview message-status [{:keys [chat-id contacts]}

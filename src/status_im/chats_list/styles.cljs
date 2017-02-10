@@ -66,7 +66,7 @@
 
 (def last-message-text
   {:margin-top   4
-   :margin-right 40
+   :margin-right 20
    :color        text4-color
    :fontSize     14
    :lineHeight   20})
