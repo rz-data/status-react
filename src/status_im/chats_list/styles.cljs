@@ -100,7 +100,7 @@
    :borderRadius    50})
 
 (def new-messages-text
-  {:top       3
+  {:top       2
    :left      0
    :fontSize  12
    :color     color-blue
