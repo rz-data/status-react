@@ -87,15 +87,12 @@
       [chat-icon-view-chat-list chat-id group-chat name color online]]
      [view st/item-container
       [view st/name-view
+       (when group-chat
+         [icon :group st/group-icon])
        [text {:style st/name-text}
         (if (str/blank? name)
           (generate-gfy)
-          (truncate-str name 30))]
-       (when group-chat
-         [icon :group st/group-icon])
-       (when group-chat
-         [text {:style st/memebers-text}
-          (label-pluralize (inc (count contacts)) :t/members)])]
+          (truncate-str name 30))]]
       [message-content-text last-message]]
      [view
       (when last-message

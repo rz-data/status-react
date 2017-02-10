@@ -59,16 +59,10 @@
    :font-size  16})
 
 (def group-icon
-  {:margin-top  5
-   :margin-left 8
-   :width       14
-   :height      9})
-
-(def memebers-text
-  {:marginTop  2
-   :marginLeft 4
-   :fontSize   12
-   :color      text2-color})
+  {:margin-top   8
+   :margin-right 6
+   :width        14
+   :height       9})
 
 (def last-message-text
   {:margin-top   4
